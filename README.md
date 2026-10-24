@@ -12,6 +12,58 @@ The initial workplace profile is a configurable **Hoya Japan support example**.
 This is an independent project, not an official Hoya product. It contains no
 Hoya internal policies, contracts, personal records, or account credentials.
 
+## Installation Guide
+
+```
+Set up Paprika Legal Assistant for my account from:
+
+https://github.com/newbiesitl/PaprikaLegalAssistant
+
+Use this published revision for the initial installation:
+d5dc64f586f3a148835f3991744c478999ba1b31
+
+Clone it into a new local project folder, or reuse a verified existing
+checkout without overwriting local changes.
+
+First read AGENTS.md and onboarding/SETUP.en.md. Then complete the full
+documented setup:
+
+1. Prepare and verify the pinned Paprika Inc dependency. Install it
+   through the host's supported plugin installation workflow.
+
+2. Install the five legal skills and four research skills using the
+   repository's documented tools. Verify file integrity and confirm
+   skill discovery in the receiving host.
+
+3. Reuse my verified owner-private Paprika service if one already
+   exists. Otherwise, set up my own private service through the
+   documented Paprika Messenger/Sites workflow. Connect my ChatGPT
+   and local Codex clients where supported, using my own authentication.
+
+4. Create or verify the dedicated paprika-legal-assistant company
+   board, then initialize the five persistent roles in the saved local
+   Codex project. Verify their actual project membership and onboarding
+   receipts.
+
+5. Use English and Traditional Chinese for the interface and reporting.
+   Select document source language, target language, jurisdiction, and
+   applicable date separately for each task.
+
+6. Keep receiving on demand. Preserve my existing model choices,
+   unrelated settings, and local edits. Keep personal profiles, legal
+   documents, credentials, and service bindings outside public Git.
+
+Complete all supported steps within this request without repeatedly
+asking for the same authorization. If sign-in, a saved-project action,
+or an unavailable capability requires my involvement, identify the
+specific handoff and preserve progress for resumption.
+
+Finish with a setup report covering the repository revision,
+dependency version, nine skills, private service, client authentication,
+dedicated board, five native roles, and anything still pending.
+Support each completed stage with its actual verification result.
+```
+
 ## Two profiles, shared methods
 
 | Profile | Typical work |
