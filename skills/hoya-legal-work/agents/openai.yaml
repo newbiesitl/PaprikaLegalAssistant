@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Office Work / 法務工作支援"
+  short_description: "Organize legal mail and matter records / 整理法務信件與案件紀錄"
+  default_prompt: "Use $hoya-legal-work to organize these messages and attachments into an evidence-linked matter record. / 請將信件與附件整理為附有依據的案件紀錄。"

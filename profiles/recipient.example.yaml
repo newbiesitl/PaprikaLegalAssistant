@@ -1,0 +1,35 @@
+# Recipient example / 使用者設定範例
+# Copy into the recipient's chosen private configuration; do not publish personal data.
+# 複製至使用者選定的私人設定位置；勿公開個人資料。
+schema_version: 1
+profile_type: "recipient_example"
+contains_personal_data: false
+interface_languages:
+  - "en"
+  - "zh-Hant"
+content_language: "follow_each_request / 依各次請求"
+translation:
+  source_language: null
+  target_language: null
+  target_locale: null
+  chinese_regional_terminology: null
+  preferred_delivery_mode: null
+  approved_glossary: null
+study:
+  level: "graduate / 研究所"
+  course: null
+  jurisdiction: null
+  citation_style: null
+  explanation_depth: "adapt_to_request / 依請求調整"
+research:
+  default_scope: "declare_for_each_task / 逐項任務說明"
+  preferred_sources: []
+  inaccessible_source_policy: "state_limit_and_continue_supported_work / 說明限制並繼續有依據的工作"
+organization:
+  context_profile: null
+  legal_entity: null
+  policies_supplied: []
+  approval_requirements_supplied: []
+timezone: null
+# These values describe preferences, not permissions or credentials.
+# 此處描述偏好，不構成權限或資格。

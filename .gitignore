@@ -1,0 +1,23 @@
+# Private account state, documents, and downloaded dependencies
+.local/
+private/
+workspace/
+.env
+.env.*
+!.env.example
+.agents/skills/
+.agents/skill-install.json
+.agents/skill-install.lock
+.codex/
+.openai/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+dist/
+build/
+*.zip
+*.tar.gz
+*.log

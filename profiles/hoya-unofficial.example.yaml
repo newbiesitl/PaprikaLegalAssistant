@@ -1,0 +1,41 @@
+# Unofficial office-work example / 非官方法務工作範例
+# The filename identifies a configurable use case; this is not an official Hoya profile.
+# 檔名用於識別可調整的使用情境；本檔並非 Hoya 官方設定。
+# No real legal entity, policy, matter, mailbox, service binding, or personal information is included.
+# 不含真實法人、政策、案件、信箱、服務綁定或個人資訊。
+schema_version: 1
+profile_type: "unofficial_organization_example"
+official_company_policy: false
+contains_real_company_data: false
+organization_label: "Example organization / 範例組織"
+legal_entity_as_evidenced: null
+office_location: null
+supported_source_languages:
+  - "en"
+  - "zh-Hant"
+  - "zh-Hans"
+  - "ja"
+interface_languages:
+  - "en"
+  - "zh-Hant"
+target_language: null
+governing_jurisdiction: null
+organization_contract_role: null
+requester_directory: null
+approved_glossary: null
+supplied_policy_documents: []
+approval_authority: null
+real_matter_storage_location: null
+extraction:
+  distinguish_sender_and_requester: true
+  retain_received_timezone: true
+  determine_party_role_per_document: true
+  language_per_attachment: true
+  allow_mixed_and_undetermined_language: true
+  evidence_statuses:
+    - "source-explicit"
+    - "inferred"
+    - "unknown"
+    - "not-applicable"
+# Configure only from actual recipient instructions or evidenced organizational material.
+# 僅依使用者實際指示或具依據的組織資料設定。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Translation / 法律翻譯"
+  short_description: "Faithful legal translation and alignment / 忠實法律翻譯與對照"
+  default_prompt: "Use $legal-translation to translate this document into the requested language while preserving its legal meaning and structure. / 請依指定語言翻譯文件，保留法律意義與結構。"

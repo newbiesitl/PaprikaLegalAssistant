@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "definition_version": "0.1.0",
+  "status": "bootstrap_candidate",
+  "company_id": "paprika-legal-assistant",
+  "repository": "newbiesitl/PaprikaLegalAssistant",
+  "topology": "single_host",
+  "runtime": "codex_local",
+  "constitution": "company/CONSTITUTION.md",
+  "coordinator_role": "coordinator",
+  "roles": [
+    {
+      "id": "coordinator",
+      "version": "0.1.0",
+      "definition": "company/roles/coordinator/agent.md"
+    },
+    {
+      "id": "academic-legal-researcher",
+      "version": "0.1.0",
+      "definition": "company/roles/academic-legal-researcher/agent.md",
+      "skill_sets": [
+        "research-core"
+      ]
+    },
+    {
+      "id": "hoya-legal-support",
+      "version": "0.1.0",
+      "definition": "company/roles/hoya-legal-support/agent.md"
+    },
+    {
+      "id": "legal-translator",
+      "version": "0.1.0",
+      "definition": "company/roles/legal-translator/agent.md"
+    },
+    {
+      "id": "quality-reviewer",
+      "version": "0.1.0",
+      "definition": "company/roles/quality-reviewer/agent.md",
+      "skill_sets": [
+        "research-core"
+      ]
+    }
+  ],
+  "ownership": "company/ownership.json",
+  "work_tracking": "company/WORK.md",
+  "knowledge_policy": "private_runtime_location",
+  "runtime_state": "private_enrollment_required",
+  "messaging": {
+    "default_receiving": "on_demand",
+    "background_monitoring": false
+  },
+  "lifecycle": {
+    "max_instances_per_role": 1,
+    "require_verified_project_membership": true,
+    "automatic_takeover": false
+  },
+  "adoption": {
+    "automatic": false,
+    "policy": "company/ADOPTION.md"
+  }
+}

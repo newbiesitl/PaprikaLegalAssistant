@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-24",
+  "paprika_inc": {
+    "name": "paprika-inc",
+    "version": "0.3.4",
+    "repository": "https://github.com/newbiesitl/paprika-inc",
+    "source_commit": "ae6080186ceb83cbdfd1b23bbfe532f8c0a678f4",
+    "release_tag": "v0.3.4",
+    "release_url": "https://github.com/newbiesitl/paprika-inc/releases/tag/v0.3.4",
+    "archive_url": "https://github.com/newbiesitl/paprika-inc/releases/download/v0.3.4/paprika-inc-0.3.4.zip",
+    "archive_size": 5515626,
+    "archive_sha256": "7b4e869cc1cde36d0bda4a32435b402ffc84ee341e3063dc616d01bcc5cb79ad",
+    "archive_root": "paprika-inc",
+    "helper": "skills/paprika-inc/scripts/inc.mjs",
+    "research_pack_sha256": "988d91a74704904dd08598ab5ca39d9b06018d52dddf5fece717f0cb7df4b101",
+    "minimum_node_major": 24,
+    "verification": "GitHub release metadata, pinned source manifest and actual downloaded ZIP bytes verified; no account installation or live bootstrap claimed."
+  },
+  "paprika_messenger_guidance": {
+    "repository": "https://github.com/newbiesitl/paprika-messenger",
+    "source_commit": "761e0d3c564d1d7326792e605a546432cfdbc8e0",
+    "service_package_version": "0.8.1",
+    "setup_skill_url": "https://github.com/newbiesitl/paprika-messenger/blob/761e0d3c564d1d7326792e605a546432cfdbc8e0/plugins/paprika-messenger-private/skills/setup-paprika/SKILL.md",
+    "deployment_guide_url": "https://github.com/newbiesitl/paprika-messenger/blob/761e0d3c564d1d7326792e605a546432cfdbc8e0/plugins/paprika-messenger-private/skills/setup-paprika/references/deployment.md",
+    "automatic_download": false,
+    "note": "A verified upstream setup reference, not a bundled or deployed service. Preserve an existing compatible owner-private service; use actual supported Sites and plugin workflows for requested provisioning."
+  }
+}

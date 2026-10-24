@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "path": "README.md",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "README.zh-Hant.md",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "company/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "onboarding/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "profiles/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "templates/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "knowledge/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "provenance/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "packaging/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "scripts/",
+      "owner_role": "coordinator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "tests/",
+      "owner_role": "quality-reviewer",
+      "reviewer_roles": [
+        "academic-legal-researcher",
+        "legal-translator"
+      ]
+    },
+    {
+      "path": "evaluation/",
+      "owner_role": "quality-reviewer",
+      "reviewer_roles": [
+        "academic-legal-researcher",
+        "legal-translator"
+      ]
+    },
+    {
+      "path": "skills/legal-study/",
+      "owner_role": "academic-legal-researcher",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/legal-research/",
+      "owner_role": "academic-legal-researcher",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/hoya-legal-work/",
+      "owner_role": "hoya-legal-support",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/legal-translation/",
+      "owner_role": "legal-translator",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/translation-review/",
+      "owner_role": "quality-reviewer",
+      "reviewer_roles": [
+        "academic-legal-researcher",
+        "legal-translator"
+      ]
+    },
+    {
+      "path": "skills/paper-lookup/",
+      "owner_role": "academic-legal-researcher",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/literature-review/",
+      "owner_role": "academic-legal-researcher",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/citation-management/",
+      "owner_role": "academic-legal-researcher",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    },
+    {
+      "path": "skills/scientific-critical-thinking/",
+      "owner_role": "academic-legal-researcher",
+      "reviewer_roles": [
+        "quality-reviewer"
+      ]
+    }
+  ]
+}

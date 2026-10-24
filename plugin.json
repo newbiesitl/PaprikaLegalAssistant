@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "paprika-legal-assistant",
+  "version": "0.1.0",
+  "description": "English and Traditional Chinese workflows for legal study, research, translation, review, and office support.",
+  "author": {"name": "Paprika Legal Assistant contributors"},
+  "homepage": "https://github.com/newbiesitl/PaprikaLegalAssistant",
+  "repository": "https://github.com/newbiesitl/PaprikaLegalAssistant",
+  "license": "MIT",
+  "keywords": ["legal-study", "translation", "research", "traditional-chinese", "paprika"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Paprika Legal Assistant",
+        "shortDescription": "Legal study and work / 法律助理",
+        "longDescription": "Reusable legal study, research, translation, evidence-review, and office workflows. English and Traditional Chinese guidance; per-task document languages and jurisdiction. 可重用的法學學習、法律研究、翻譯、證據覆核及法務工作流程。",
+        "developerName": "Paprika Legal Assistant contributors",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": [
+          "Prepare a bilingual case brief from my assigned readings.",
+          "Translate this legal document and keep translator notes separate.",
+          "請核對這份原文與譯文的法律語意及完整性。"
+        ]
+      }
+    }
+  }
+}

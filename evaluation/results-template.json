@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "not_run",
+  "run_id": null,
+  "repository_commit": null,
+  "evaluated_at": null,
+  "reviewer": null,
+  "conditions": {
+    "baseline": {
+      "model": null,
+      "model_version_visibility": null,
+      "settings": {},
+      "available_tools": [],
+      "context_supplied": []
+    },
+    "transfer": {
+      "model": null,
+      "model_version_visibility": null,
+      "settings": {},
+      "available_tools": [],
+      "context_supplied": []
+    }
+  },
+  "unavoidable_condition_differences": [],
+  "case_results": [],
+  "case_result_shape": {
+    "case_id": "replace_with_fixture_id",
+    "condition": "baseline_or_transfer",
+    "private_output_reference": null,
+    "checks": [
+      {
+        "expected_check_index": 0,
+        "result": "pass_or_fail_or_not_assessable",
+        "evidence": null
+      }
+    ],
+    "critical_failures": [],
+    "presentation_notes": [],
+    "limitations": []
+  },
+  "summary": null,
+  "scope_note": "A populated record describes only the tasks and conditions actually evaluated. Public fixtures do not establish performance on unseen legal work."
+}

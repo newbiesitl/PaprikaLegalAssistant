@@ -1,0 +1,4 @@
+interface:
+  display_name: "Translation Review / 翻譯覆核"
+  short_description: "Check meaning, terminology, and layout / 核對語意、術語與版面"
+  default_prompt: "Use $translation-review to compare this translation with its source and report material errors separately from formatting. / 請對照原文覆核譯文，分開列出實質錯誤與格式問題。"

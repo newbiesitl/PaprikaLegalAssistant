@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Research / 法律研究"
+  short_description: "Traceable legal research and reviews / 可追溯的法律研究與回顧"
+  default_prompt: "Use $legal-research to investigate this question with cited evidence and a clear account of uncertainty. / 請附來源研究此問題，並明示不確定之處。"

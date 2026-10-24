@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Study / 法律學習"
+  short_description: "Reading guides and case briefs / 閱讀指南與判例摘要"
+  default_prompt: "Use $legal-study to prepare an English and Traditional Chinese guide to my assigned legal reading. / 請整理指定法律讀物的英文及繁體中文學習指南。"

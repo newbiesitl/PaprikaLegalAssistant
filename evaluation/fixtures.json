@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "fixture_kind": "synthetic_closed_packet",
+  "purpose": "Review meaning preservation and evidence handling using only the supplied fictional inputs; not real legal ground truth.",
+  "model_evaluation_status": "not_run",
+  "cases": [
+    {
+      "id": "TR-001",
+      "category": "translation",
+      "synthetic": true,
+      "task": "Translate the clause into Traditional Chinese. Preserve numbering and legal meaning. Provide the translation, followed only by any genuinely necessary ambiguity note. Do not propose new contract terms.",
+      "input": {
+        "source_id": "TR-001-A",
+        "source_language": "en",
+        "target_language": "zh-Hant",
+        "text": "4.2 The Supplier may suspend delivery only if the Buyer fails to pay an undisputed invoice within thirty (30) calendar days after receiving written notice. This right does not apply to amounts disputed in good faith."
+      },
+      "expected_checks": [
+        "The Supplier retains permission to suspend; the translation does not create a duty to suspend.",
+        "The Buyer is the party receiving written notice and owing payment.",
+        "The condition concerns an undisputed invoice and thirty (30) calendar days after receipt of written notice.",
+        "The good-faith disputed-amount exception is retained.",
+        "Clause number 4.2 and the number thirty (30) are preserved.",
+        "The output uses Traditional Chinese and does not silently add a grace period, governing law, or remedy."
+      ],
+      "critical_failure_conditions": [
+        "Permission becomes a mandatory duty.",
+        "The notice trigger, calendar-day meaning, or exception is omitted or reversed.",
+        "The parties are swapped or new substantive terms are inserted."
+      ]
+    },
+    {
+      "id": "TR-002",
+      "category": "translation",
+      "synthetic": true,
+      "task": "Translate the fictional Japanese clause into English. Keep the operative rule and exception distinct. Do not add customary provisions that are absent from the source.",
+      "input": {
+        "source_id": "TR-002-A",
+        "source_language": "ja",
+        "target_language": "en",
+        "text": "第7条　受領者は、本契約に基づき開示された秘密情報を、開示者の事前の書面による同意なく第三者に開示してはならない。ただし、法令に基づき開示が義務付けられる場合は、この限りでない。"
+      },
+      "expected_checks": [
+        "The Recipient is prohibited from disclosing Confidential Information disclosed under the agreement to third parties without the Discloser's prior written consent.",
+        "The exception is disclosure required by laws or regulations, not merely disclosure permitted by them.",
+        "Article 7 and the distinction between Recipient and Discloser are preserved.",
+        "The answer does not add advance notification, minimum-necessary disclosure, compelled-disclosure procedures, or legal conclusions about an actual jurisdiction."
+      ],
+      "critical_failure_conditions": [
+        "Required disclosure is widened to any legally permitted disclosure.",
+        "The prohibition is reversed or prior written consent is lost.",
+        "New obligations are presented as part of the translation."
+      ]
+    },
+    {
+      "id": "LE-001",
+      "category": "legal_sources",
+      "synthetic": true,
+      "task": "Using only this fictional training packet, identify the notice period applicable on 1 March 2025 and cite the relevant source IDs. Explain the version issue without describing this packet as real law.",
+      "input": {
+        "jurisdiction": "Fictional Training Jurisdiction",
+        "applicable_date": "2025-03-01",
+        "sources": [
+          {
+            "source_id": "LE-001-A",
+            "title": "Fictional Notice Rule, original packet text",
+            "text": "Section 3: A notice under this training rule must be delivered within seven days. This section took effect on 1 January 2024."
+          },
+          {
+            "source_id": "LE-001-B",
+            "title": "Fictional Notice Rule amendment, packet text",
+            "text": "Promulgated on 15 January 2025. Section 3 is amended by replacing 'seven days' with 'fourteen days'. This amendment takes effect on 1 July 2025. No transitional exception is supplied in this packet."
+          },
+          {
+            "source_id": "LE-001-C",
+            "title": "Fictional blog summary",
+            "text": "The new notice period is fourteen days."
+          }
+        ]
+      },
+      "expected_checks": [
+        "The answer identifies seven days for 1 March 2025 under the supplied fictional rule.",
+        "It distinguishes promulgation on 15 January from commencement on 1 July.",
+        "It cites LE-001-A and LE-001-B and does not treat the blog summary as overriding the packet's effective-date text.",
+        "It confines the conclusion to the fictional packet and does not invent transitional rules."
+      ],
+      "critical_failure_conditions": [
+        "The answer applies fourteen days solely because the amendment was promulgated.",
+        "A real statute or jurisdiction is invented for the packet."
+      ]
+    },
+    {
+      "id": "LE-002",
+      "category": "legal_sources",
+      "synthetic": true,
+      "task": "Does the supplied fictional decision prove that electronic service is always valid, and can we describe that proposition as current binding law? Answer using only the packet and give the relevant pinpoint.",
+      "input": {
+        "source_id": "LE-002-A",
+        "title": "Example v Sample, Fictional Training Tribunal, 2024",
+        "text": "Paragraph 12: We decide only that the notice in this matter was timely under the parties' stipulated training rule. Whether electronic service is valid generally is not before us.",
+        "coverage": "Only the quoted paragraph is supplied. No jurisdictional hierarchy, later decisions, citator report, or legislation is supplied."
+      },
+      "expected_checks": [
+        "The answer rejects the universal electronic-service proposition as unsupported by paragraph 12.",
+        "It reports the actual narrow proposition: timeliness under the stipulated training rule.",
+        "It states that binding status and currentness cannot be established from the packet.",
+        "It uses source LE-002-A, paragraph 12, and does not invent a reporter citation, court hierarchy, or later treatment."
+      ],
+      "critical_failure_conditions": [
+        "A narrow quoted statement is converted into a universal holding.",
+        "Currentness or binding status is claimed without evidence."
+      ]
+    },
+    {
+      "id": "ST-001",
+      "category": "study",
+      "synthetic": true,
+      "task": "Prepare a concise case brief with English and Traditional Chinese alongside: facts, procedure, issue, holding, reasoning, and dissent. Stay within the assigned fictional packet. Add one discussion question rather than supplying outside law.",
+      "input": {
+        "source_id": "ST-001-A",
+        "title": "Study Case A: fictional seminar packet",
+        "text": "A training agreement required a cancellation notice to reach the recipient by Friday. The notice was received Thursday. The trial panel dismissed the claim because it treated the posting date as controlling. A two-member appellate majority reversed and remanded: the packet's agreement expressly used receipt, so the notice was timely. The majority did not decide damages. One member dissented, arguing that a different training policy should favor posting date. The packet supplies no other facts, legal authorities, or subsequent history."
+      },
+      "expected_checks": [
+        "The brief accurately separates facts, trial treatment, appellate disposition, issue, holding, and reasoning.",
+        "Receipt governs the majority's interpretation of this supplied training agreement.",
+        "The posting-date argument is identified as dissent, not the holding.",
+        "Reversal/remand is distinguished from an award of damages.",
+        "English and Traditional Chinese convey the same content, and the discussion question is labeled as a question.",
+        "No missing facts, real citations, or later developments are invented."
+      ],
+      "critical_failure_conditions": [
+        "The dissent is reported as the holding.",
+        "The answer states that damages were awarded or that remand resolved an unsupplied issue."
+      ]
+    },
+    {
+      "id": "OF-001",
+      "category": "office_extraction",
+      "synthetic": true,
+      "task": "Extract received_at, requester_display_name, requester_full_name, counterparty, counterparty_country, contract_languages, and evidence. Return JSON. Keep unresolved identity fields null. The supported organization is Training Optics Japan Ltd; this is a fictional example, not a company record.",
+      "input": {
+        "email_id": "OF-001-EMAIL",
+        "received_at": "2026-04-07T09:15:00+09:00",
+        "from": "A. Chen <achen@example.invalid>",
+        "body": "Please review the attached draft manufacturing services agreement. Training Optics Japan Ltd is the customer. Maya is copied for scheduling only.",
+        "attachments": [
+          {
+            "source_id": "OF-001-ATTACHMENT-1",
+            "filename": "fictional-draft.txt",
+            "language": "en",
+            "text": "Parties: Training Optics Japan Ltd (Customer); Polar Sample Manufacturing Ltd (Supplier). Supplier registered office: Vancouver, Canada. This draft is written entirely in English."
+          }
+        ]
+      },
+      "expected_checks": [
+        "received_at preserves the supplied timestamp and +09:00 offset.",
+        "requester_display_name is A. Chen and requester_full_name remains null.",
+        "counterparty is Polar Sample Manufacturing Ltd, supported by the attachment's party clause.",
+        "counterparty_country is Canada, supported by the supplier registered-office statement, not by the requester email.",
+        "contract_languages is [\"en\"], based on the attachment, not the office location.",
+        "Evidence identifies the email fields/body or attachment source ID for each non-null extracted conclusion; copied recipient Maya is not treated as the requester."
+      ],
+      "critical_failure_conditions": [
+        "A full requester name is invented.",
+        "The supported organization or copied recipient is substituted for the counterparty.",
+        "Country or contract language is inferred solely from the office location."
+      ]
+    },
+    {
+      "id": "OF-002",
+      "category": "office_extraction",
+      "synthetic": true,
+      "task": "Extract received_at, requester_display_name, requester_full_name, counterparty, counterparty_country, contract_languages, and evidence as JSON. Use null for unresolved entities/country and [] for contract_languages when there is no relevant contract attachment. Do not infer the contract language from this email.",
+      "input": {
+        "email_id": "OF-002-EMAIL",
+        "received_at": "2026-04-08T16:00:00+09:00",
+        "from": "S. Lee <slee@sender.example.invalid>",
+        "body": "A vendor has asked whether we can discuss a delivery issue next week. I will send its name and documents later. An unrelated earlier matter involved a French-language contract; do not use that old matter for this inquiry.",
+        "attachments": []
+      },
+      "expected_checks": [
+        "The supplied received_at timestamp and requester display name are preserved.",
+        "requester_full_name, counterparty, and counterparty_country are null with an insufficient-evidence explanation.",
+        "contract_languages is [] and is not set to English or French.",
+        "The explanation distinguishes the email's language and unrelated historical reference from the missing contract document."
+      ],
+      "critical_failure_conditions": [
+        "A vendor identity or country is invented.",
+        "The unrelated French contract or English email is treated as this inquiry's contract language."
+      ]
+    },
+    {
+      "id": "LR-001",
+      "category": "literature_review",
+      "synthetic": true,
+      "task": "Create a short evidence table from these fictional bibliographic records. State how many records and underlying studies are represented, what text was available, and what cannot be appraised. Do not describe this as an exhaustive systematic review.",
+      "input": {
+        "search_scope": "Two supplied records only; no database search was performed.",
+        "records": [
+          {
+            "source_id": "LR-001-A",
+            "record_type": "preprint",
+            "study_id": "TRAINING-COHORT-01",
+            "available_text": "abstract_only",
+            "text": "Fictional abstract: a study of 32 volunteers compared two document layouts. The allocation procedure, attrition, full results, and uncertainty estimates are not supplied."
+          },
+          {
+            "source_id": "LR-001-B",
+            "record_type": "journal_report",
+            "study_id": "TRAINING-COHORT-01",
+            "available_text": "metadata_and_abstract_only",
+            "text": "Fictional abstract: this report describes the same 32 volunteers and experiment as preprint LR-001-A. Full methods and results are not supplied."
+          }
+        ]
+      },
+      "expected_checks": [
+        "Two records/reports are linked to one underlying study, without double-counting the 32 volunteers.",
+        "The table labels the available material as abstract/metadata rather than full text.",
+        "Randomization, attrition, effect size, precision, and risk-of-bias details are reported as unassessable from the supplied material rather than invented.",
+        "The answer states the bounded two-record scope and does not claim systematic or exhaustive coverage.",
+        "No real DOI, journal name, author list, or empirical effect is fabricated."
+      ],
+      "critical_failure_conditions": [
+        "The overlapping reports are counted as independent studies or 64 participants.",
+        "Missing methods or effect estimates are invented.",
+        "Full-text assessment or exhaustive searching is claimed without having occurred."
+      ]
+    }
+  ]
+}
